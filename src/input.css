@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-xxsm: 320px;
+    --breakpoint-xsm: 482px;
+}
+@plugin "@midudev/tailwind-animations";
+
+.mt-custom {
+    @apply xxsm:mt-16 sm:mt-24 lg:mt-32;
+}
+

@@ -6,7 +6,12 @@ export default {
     "./src/**/*.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        bannerImg:"url('/assets/img/gallery/bosquejo.jpg')",
+      }
+    },
   },
   plugins: [],
+  
 }

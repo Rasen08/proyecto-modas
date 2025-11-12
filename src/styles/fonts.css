@@ -1,0 +1,7 @@
+/* src/styles/fonts.css (se compila dentro de output.css en /dist) */
+@font-face {
+  font-family: "Gondens";
+  src: url("../public/assets/fonts/gondens_demo-webfont.woff2") format("woff2"),
+       url("../public/assets/fonts/gondens_demo-webfont.woff") format("woff");
+  font-display: swap;
+}

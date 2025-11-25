@@ -1,0 +1,15 @@
+# robots.txt para NE - Desfile de Modas
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a recursos estáticos
+Allow: /assets/
+Allow: /src/
+
+# Bloquear archivos
+Disallow: /node_modules/
+Disallow: *.json
+Disallow: *.config.js
+
+# Sitemap

@@ -1,368 +1,322 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NE - Desfile de Modas</title>
     <link rel="stylesheet" href="./assets/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
 </head>
-<body class="antialiased bg-gradient-to-t from-violet-950 via-purple-950 to-black xxsm:from-purple-950 xxsm:to-black overflow-x-hidden">
+
+<body
+    class="antialiased bg-gradient-to-t from-violet-950 via-purple-950 to-black xxsm:from-purple-950 xxsm:to-black overflow-x-hidden">
     <header class="px-0 mx-0">
-        <nav class="fixed w-full top-0 h-20 md:h-24 z-50 bg-white/5 backdrop-blur-2xl border-b border-white/5 shadow-lg">
+        <nav
+            class="fixed w-full top-0 h-20 md:h-24 z-50 bg-white/5 backdrop-blur-2xl border-b border-white/5 shadow-lg">
             <div class="container mx-auto h-full flex items-center justify-between">
                 <a href="#hero">
-                    <img class="xxsm:h-18 md:h-20 w-auto" src="./assets/img/Nueva Escuela__LOGO-Negativo__Horizontal.png" alt="Logo de Nueva Escuela">
+                    <img class="xxsm:h-18 md:h-20 w-auto"
+                        src="./assets/img/Nueva Escuela__LOGO-Negativo__Horizontal.png" alt="Logo de Nueva Escuela">
                 </a>
-                
+
                 <!-- Botón Hamburguesa -->
-                <button id="mobileMenuBtn" class=" text-white focus:outline-none bg-white/10 backdrop-blur-xl p-3 rounded-full border border-white/20 cursor-pointer">
+                <button id="mobileMenuBtn"
+                    class=" text-white focus:outline-none bg-white/10 backdrop-blur-xl p-3 rounded-full border border-white/20 cursor-pointer">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
-            
+
             <!-- Menú -->
-            <div id="mobileMenu" class="w-full bg-black/70 backdrop-blur-2xl max-h-0 overflow-hidden transition-all duration-300 border-b border-white/10 lg:px-42">
+            <div id="mobileMenu"
+                class="w-full bg-black/70 backdrop-blur-2xl max-h-0 overflow-hidden transition-all duration-300 border-b border-white/10 lg:px-42">
                 <ul class="flex flex-col text-white text-right">
-                    <li><a href="#concepto" class="block px-6 py-4 hover:bg-white/10 transition-colors border-b border-white/5">Concepto</a></li>
-                    <li><a href="#gallery" class="block px-6 py-4 hover:bg-white/10 transition-colors border-b border-white/5">Galería</a></li>
-                    <li><a href="#cronograma" class="block px-6 py-4 hover:bg-white/10 transition-colors">Cronograma</a></li>
+                    <li><a href="#concepto"
+                            class="block px-6 py-4 hover:bg-white/10 transition-colors border-b border-white/5">Concepto</a>
+                    </li>
+                    <li><a href="#gallery"
+                            class="block px-6 py-4 hover:bg-white/10 transition-colors border-b border-white/5">Galería</a>
+                    </li>
+                    <li><a href="#cronograma" class="block px-6 py-4 hover:bg-white/10 transition-colors">Cronograma</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-<main class="overflow-x-hidden h-auto">
-    <!-- Hero -->
-    <section id="hero" class="relative w-full h-screen overflow-hidden flex items-center justify-center">
-        <!-- Fondo con video -->
-        <div class="absolute inset-0">
-            <video autoplay muted loop playsinline class="w-full h-full object-cover">
-                <source src="./assets/video/vid-hero.mp4" type="video/mp4">
-            </video>
-            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/90"></div>
-        </div>
-        
-        <!-- Grid Container -->
-        <div class="relative z-10 w-full h-full ">
-            <div class="grid xxsm:grid-rows-6 lg:grid-rows-3 lg:grid-cols-12 xxsm:grid-cols-4 lg:p-0 xxsm:px-4 gap-4 w-full h-screen animate-blurred-fade-in animate-delay-700">
-
-                <!-- 50 años -->
-                <img src="./assets/img/Nueva_Escuela_55_LOGO_color-ajustado.png" alt="Logo de 55 años de Nueva Escuela." class="xxsm:col-span-2 xxsm:col-start-1 xxsm:row-start-3 lg:row-start-2 lg:col-start-2 lg:col-span-2 xxsm:pl-10 xxsm:mt-1 xsm:pl-12 sm:pl-24 md:col-span-1 md:col-start-2 md:pl-0 2xl:px-5 lg:mt-4">
-                
-                <!-- Título principal -->
-                <h1 class="mainTitle oswald-title xxsm:col-span-4 xxsm:row-span-2 xxsm:row-start-1 flex xxsm:items-end lg:row-span-1 lg:row-start-2 lg:items-start 2xl:col-span-4 2xl:col-start-4 xl:col-span-5 xl:col-start-4 lg:col-span-5 lg:col-start-4 lg:px-0 xxsm:text-left xxsm:text-[2.8rem] xsm:text-[4.2rem] sm:text-[82px] lg:text-left xxsm:leading-[3.4rem] xsm:leading-[4.4rem] sm:leading-[5.4rem] md:leading-[5.5rem] lg:leading-[6rem] 2xl:leading-[6.8rem] text-white">Demostración de proyectos finales
-                </h1>
-
-                <!-- Contador -->
-                <div class="counterGrid 2xl:col-span-4 2xl:col-start-5 xl:col-span-4 xl:col-start-5 lg:col-span-6 lg:col-start-4 xxsm:row-start-6 lg:row-start-3 md:col-span-2 md:col-start-2 sm:col-span-4 xxsm:col-span-4 md:px-0 grid xxsm:grid-rows-5 lg:grid-rows-4 lg:grid-cols-6">
-                    <div class="xxsm:row-start-1 xxsm:row-span-4 lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-4 xl:col-span-6 2xl:col-span-4 2xl:col-start-2 bg-white/5 backdrop-blur-2xl flex flex-col items-center justify-center rounded-3xl border border-violet-400/30 shadow-2xl p-6 md:p-8">
-                        <p class="text-2xl xsm:text-[28px] sm:text-3xl md:text-4xl text-center text-amber-50 mb-3">
-                            <span id="countdown">00:00:00</span>
-                        </p>
-                        <a href="#cronograma" class="text-sm md:text-base text-amber-300 hover:text-amber-200 transition-colors">Ver ubicación →</a>
-                    </div>
-                </div>
-                
-                <!-- Párrafo "Veni a ver..." -->
-                <p class="xxsm:col-span-2 xxsm:col-start-3 xxsm:row-start-3 xxsm:items-start xxsm:text-1xl xsm:text-[1.25rem] md:text-2xl md:pr-[2rem] lg:text-2xl lg:row-start-1 lg:col-span-6 2xl:col-span-4 2xl:col-start-2 xl:col-span-3 xl:col-start-2 lg:col-start-2 lg:px-0 flex lg:items-end font-gabarito text-white">
-                    ¡Veni a ver los proyectos de los alumnos!
-                </p>
-                
-                <!-- Información del evento -->
-                <div class="xxsm:row-start-5 2xl:col-span-2 2xl:col-start-10 xl:col-span-3 xl:col-start-9 lg:col-span-3 lg:col-start-9 lg:row-start-2 md:col-span-2 md:col-start-3 sm:col-span-4 xxsm:col-span-4 xxsm:justify-end xsm:justify-start xxsm:text-right flex flex-col items-end lg:justify-center xxsm:gap-2 lg:gap-5 font-gabarito text-white">   
-                    <p class="xxsm:text-3xl xsm:text-[32px] lg:text-4xl">Desfile de Modas 2025</p>
-                    <p class="xxsm:text-1xl xsm:text-[1.25rem] lg:text-2xl lg:ml-4">Diciembre 5  |  18:20hs</p>                
-                </div>
-
+    <main class="overflow-x-hidden h-auto">
+        <!-- Hero -->
+        <section id="hero" class="relative w-full h-screen overflow-hidden flex items-center justify-center">
+            <!-- Fondo con video -->
+            <div class="absolute inset-0">
+                <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                    <source src="./assets/video/vid-hero.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/90"></div>
             </div>
-        </div>
-    </section>
 
-    <!-- Concepto -->
-    <section id="concepto" class="grid xxsm:grid-cols-4 xxsm:grid-rows-2 lg:grid-cols-12 lg:grid-rows-2 xl:grid-rows-1 xxsm:gap-8 xsm:gap-2 sm:gap-0 lg:gap-4 lg:h-[100vh] xxsm:h-auto sm:h-fit overflow-hidden xxsm:pt-[20vh] xsm:pt-[10vh] sm:pt-[4vh] lg:pt-[10vh]">
-        <article class="xl:h-[80vh] xxsm:col-span-4 lg:col-span-10 xl:col-span-4 lg:col-start-2 xl:col-start-2 px-4 md:px-36 lg:px-0 flex flex-col justify-center">
-            <h2 class="text-3xl xsm:text-[2rem] sm:text-[2.4rem] md:text-4xl lg:text-5xl text-white">Concepto</h2>
-            <p class="sm:text-2xl mt-8 md:mt-12 text-xl md:text-2xl text-balance text-white leading-relaxed">
-                Todo empieza con una idea que, como un capullo, se transforma con paciencia. En este espacio-tiempo,
-                la moda, el diseño y la innovación crecen hasta que el capullo se rompe y surge lo inesperado: volar
-                hacia lugares donde nunca estuviste. Nueva Escuela presenta un desfile que celebra la metamorfosis
-                en cada creación.
-            </p>
-        </article>
-        <video autoplay muted loop playsinline class="glass-panel-rl w-full h-full xxsm:h-[45vh] sm:h-[60vh] md:h-full object-cover xxsm:col-span-4 lg:col-span-11  lg:col-start-2 lg:row-start-2 xl:row-start-1 xl:col-span-6 xl:col-start-7">
-            <source src="./assets/video/banner-animado.mp4" type="video/mp4">
-        </video>
-    </section>                        
+            <!-- Grid Container -->
+            <div class="relative z-10 w-full h-full ">
+                <div
+                    class="grid xxsm:grid-rows-6 lg:grid-rows-3 lg:grid-cols-12 xxsm:grid-cols-4 lg:p-0 xxsm:px-4 gap-4 w-full h-screen animate-blurred-fade-in animate-delay-700">
 
-        <!-- Gallery -->
-        <section id="gallery" class="grid lg:grid-cols-12 gap-4 xxsm:pt-[8vh] xsm:pt-[10vh] lg:pt-[10vh] pb-5 scroll-mt-20 lg:px-0 overflow-hidden">
-            <h2 class="text-3xl xsm:text-[2rem] sm:text-[2.4rem] md:text-4xl lg:text-5xl text-white lg:col-span-10 xxsm:col-span-12 lg:col-start-2 text-right lg:text-right xxsm:px-4 xxsm:mb-4 lg:mb-8">Entre hilos y capullos</h2>
-            <div class="col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 lg:grid-rows-3 gap-6">
-                <div class="glass-panel-rr lg:col-span-5 lg:col-start-1 h-80 lg:h-[55vh] overflow-hidden bg-blue-200">
-                    <img src="./assets/img/gallery/exposicion-1.jpg" alt="" class="parallax-image object-cover w-full h-full" />
-                </div>
-                <div class="glass-panel-rl lg:col-span-7 lg:col-start-6 h-80 lg:h-[55vh] overflow-hidden bg-blue-200">
-                    <img src="./assets/img/gallery/exposicion-2.jpg" alt="" class="parallax-image object-cover w-full h-full" />
-                </div>
-                <div class="glass-panel-rr lg:col-span-7 lg:col-start-1 h-80 lg:h-[55vh] overflow-hidden">
-                    <img src="./assets/img/gallery/exposicion-3.jpg" alt="" class="parallax-image object-cover w-full h-full" />
-                </div>
-                <div class="glass-panel-rl lg:col-span-5 lg:col-start-8 h-80 lg:h-[55vh] overflow-hidden bg-blue-200">
-                    <img src="./assets/img/gallery/exposicion-4.jpg" alt="" class="parallax-image object-cover w-full h-full" />
-                </div>
-                <div class="glass-panel-rr lg:col-span-5 lg:col-start-1 h-80 lg:h-[55vh] overflow-hidden bg-blue-200">
-                    <img src="./assets/img/gallery/bosquejo.jpg" alt="" class="parallax-image object-cover w-full h-full" />
-                </div>
-                <div class="glass-panel-rl lg:col-span-7 lg:col-start-6 h-80 lg:h-[55vh] overflow-hidden bg-blue-200">
-                    <img src="./assets/img/gallery/lugar.jpg" alt="" class="parallax-image object-cover w-full h-full" />
+                    <!-- 50 años -->
+                    <img src="./assets/img/Nueva_Escuela_55_LOGO_color-ajustado.png"
+                        alt="Logo de 55 años de Nueva Escuela."
+                        class="xxsm:col-span-2 xxsm:col-start-1 xxsm:row-start-3 lg:row-start-2 lg:col-start-2 lg:col-span-2 xxsm:pl-10 xxsm:mt-1 xsm:pl-12 sm:pl-24 md:col-span-1 md:col-start-2 md:pl-0 2xl:px-5 lg:mt-4">
+
+                    <!-- Título principal -->
+                    <h1
+                        class="mainTitle oswald-title xxsm:col-span-4 xxsm:row-span-2 xxsm:row-start-1 flex xxsm:items-end lg:row-span-1 lg:row-start-2 lg:items-start 2xl:col-span-4 2xl:col-start-4 xl:col-span-5 xl:col-start-4 lg:col-span-5 lg:col-start-4 lg:px-0 xxsm:text-left xxsm:text-[2.8rem] xsm:text-[4.2rem] sm:text-[82px] lg:text-left xxsm:leading-[3.4rem] xsm:leading-[4.4rem] sm:leading-[5.4rem] md:leading-[5.5rem] lg:leading-[6rem] 2xl:leading-[6.8rem] text-white">
+                        Demostración de proyectos finales
+                    </h1>
+
+                    <!-- Contador -->
+                    <div
+                        class="counterGrid 2xl:col-span-4 2xl:col-start-5 xl:col-span-4 xl:col-start-5 lg:col-span-6 lg:col-start-4 xxsm:row-start-6 lg:row-start-3 md:col-span-2 md:col-start-2 sm:col-span-4 xxsm:col-span-4 md:px-0 grid xxsm:grid-rows-5 lg:grid-rows-4 lg:grid-cols-6">
+                        <div
+                            class="xxsm:row-start-1 xxsm:row-span-4 lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-4 xl:col-span-6 2xl:col-span-4 2xl:col-start-2 bg-white/5 backdrop-blur-2xl flex flex-col items-center justify-center rounded-3xl border border-violet-400/30 shadow-2xl p-6 md:p-8">
+                            <p class="text-2xl xsm:text-[28px] sm:text-3xl md:text-4xl text-center text-amber-50 mb-3">
+                                <span id="countdown">00:00:00</span>
+                            </p>
+                            <a href="#cronograma"
+                                class="text-sm md:text-base text-amber-300 hover:text-amber-200 transition-colors">Ver
+                                ubicación →</a>
+                        </div>
+                    </div>
+
+                    <!-- Párrafo "Veni a ver..." -->
+                    <p
+                        class="xxsm:col-span-2 xxsm:col-start-3 xxsm:row-start-3 xxsm:items-start xxsm:text-1xl xsm:text-[1.25rem] md:text-2xl md:pr-[2rem] lg:text-2xl lg:row-start-1 lg:col-span-6 2xl:col-span-4 2xl:col-start-2 xl:col-span-3 xl:col-start-2 lg:col-start-2 lg:px-0 flex lg:items-end font-gabarito text-white">
+                        ¡Veni a ver los proyectos de los alumnos!
+                    </p>
+
+                    <!-- Información del evento -->
+                    <div
+                        class="xxsm:row-start-5 2xl:col-span-2 2xl:col-start-10 xl:col-span-3 xl:col-start-9 lg:col-span-3 lg:col-start-9 lg:row-start-2 md:col-span-2 md:col-start-3 sm:col-span-4 xxsm:col-span-4 xxsm:justify-end xsm:justify-start xxsm:text-right flex flex-col items-end lg:justify-center xxsm:gap-2 lg:gap-5 font-gabarito text-white">
+                        <p class="xxsm:text-3xl xsm:text-[32px] lg:text-4xl">Desfile de Modas 2025</p>
+                        <p class="xxsm:text-1xl xsm:text-[1.25rem] lg:text-2xl lg:ml-4">Diciembre 5 | 18:20hs</p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Banners -->
-<!--         <section id="banners" class="relative bg-gradient-to-br from-purple-900 via-fuchsia-800 to-pink-700 overflow-hidden">
-            <div class="w-full h-full">
-                <div class="w-full overflow-hidden">
-                    <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-                        <div class="min-w-full h-80 md:h-96 flex items-center justify-center flex-shrink-0">
-                            <img src="./assets/img/banners/Sliders___disenio_web_programacion.png" alt="Inscripción 1" class="w-full h-full object-cover">
-                        </div>
-                        <div class="min-w-full h-80 md:h-96 flex items-center justify-center flex-shrink-0">
-                            <img src="./assets/img/banners/Sliders___diseniomoda_indum.png" alt="Inscripción 2" class="w-full h-full object-cover">
-                        </div>
-                        <div class="min-w-full h-80 md:h-96 flex items-center justify-center flex-shrink-0">
-                            <img src="./assets/img/banners/Sliders__disenio_grafico_digital.png" alt="Inscripción 3" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        <!-- Concepto -->
+        <section id="concepto"
+            class="grid xxsm:grid-cols-4 xxsm:grid-rows-2 lg:grid-cols-12 lg:grid-rows-2 xl:grid-rows-1 xxsm:gap-8 xsm:gap-2 sm:gap-0 lg:gap-4 lg:h-[100vh] xxsm:h-auto sm:h-fit overflow-hidden xxsm:pt-[20vh] xsm:pt-[10vh] sm:pt-[4vh] lg:pt-[10vh]">
+            <article
+                class="xl:h-[80vh] xxsm:col-span-4 lg:col-span-10 xl:col-span-4 lg:col-start-2 xl:col-start-2 px-4 md:px-36 lg:px-0 flex flex-col justify-center">
+                <h2 class="text-3xl xsm:text-[2rem] sm:text-[2.4rem] md:text-4xl lg:text-5xl text-white">Concepto</h2>
+                <p class="sm:text-2xl mt-8 md:mt-12 text-xl md:text-2xl text-balance text-white leading-relaxed">
+                    Todo empieza con una idea que, como un capullo, se transforma con paciencia. En este espacio-tiempo,
+                    la moda, el diseño y la innovación crecen hasta que el capullo se rompe y surge lo inesperado: volar
+                    hacia lugares donde nunca estuviste. Nueva Escuela presenta un desfile que celebra la metamorfosis
+                    en cada creación.
+                </p>
+            </article>
+            <video autoplay muted loop playsinline
+                class="glass-panel-rl w-full h-full xxsm:h-[45vh] sm:h-[60vh] md:h-full object-cover xxsm:col-span-4 lg:col-span-11  lg:col-start-2 lg:row-start-2 xl:row-start-1 xl:col-span-6 xl:col-start-7">
+                <source src="./assets/video/banner-animado.mp4" type="video/mp4">
+            </video>
+        </section>
 
-        <!-- Staff -->
-<!--         <section id="staff" class="py-16 md:py-24 bg-black overflow-hidden">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-5xl text-center mb-12 text-white">Nuestro Equipo</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gloria-Vitale__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gloria Vitale</h3>
-                        <p class="text-sm text-gray-300">Directora de estudios</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/MArcelo-Di-Stasio__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Marcelo Di Stasio</h3>
-                        <p class="text-sm text-gray-300">Coordinador General</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gabriela-Lichowski__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gabriela Lichowski</h3>
-                        <p class="text-sm text-gray-300">Rectora</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gabriela-Lichowski__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gabriela Lichowski</h3>
-                        <p class="text-sm text-gray-300">Rectora</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gabriela-Lichowski__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gabriela Lichowski</h3>
-                        <p class="text-sm text-gray-300">Rectora</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gabriela-Lichowski__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gabriela Lichowski</h3>
-                        <p class="text-sm text-gray-300">Rectora</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gabriela-Lichowski__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gabriela Lichowski</h3>
-                        <p class="text-sm text-gray-300">Rectora</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gabriela-Lichowski__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gabriela Lichowski</h3>
-                        <p class="text-sm text-gray-300">Rectora</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gabriela-Lichowski__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gabriela Lichowski</h3>
-                        <p class="text-sm text-gray-300">Rectora</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="mb-4 overflow-hidden rounded-full w-24 h-24 md:w-32 md:h-32 mx-auto">
-                            <img src="./assets/img/img-staff/Gabriela-Lichowski__240x240.png" alt="">
-                        </div>
-                        <h3 class="font-bold text-white">Gabriela Lichowski</h3>
-                        <p class="text-sm text-gray-300">Rectora</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
+       <!-- Gallery -->
+<section id="gallery" class="grid lg:grid-cols-12 gap-4 xxsm:pt-[8vh] xsm:pt-[10vh] lg:pt-[10vh] pb-5 scroll-mt-20 lg:px-0 overflow-hidden">
+    <h2 class="text-3xl xsm:text-[2rem] sm:text-[2.4rem] md:text-4xl lg:text-5xl text-white lg:col-span-10 xxsm:col-span-12 lg:col-start-2 text-right lg:text-right xxsm:px-4 xxsm:mb-4 lg:mb-8">Entre hilos y capullos</h2>
+    <div class="col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 lg:grid-rows-3 gap-6">
+        
+        <a href="./assets/img/gallery/IMG-1.JPG" 
+           class="glightbox glass-panel-rr lg:col-span-5 lg:col-start-1 h-80 lg:h-[55vh] overflow-hidden bg-blue-200" 
+           data-gallery="gallery">
+            <img src="./assets/img/gallery/IMG-1.JPG" alt="Imagen 1" class="parallax-image object-cover w-full h-full" />
+        </a>
+        
+        <a href="./assets/img/gallery/IMG-2.JPG" 
+           class="glightbox glass-panel-rl lg:col-span-7 lg:col-start-6 h-80 lg:h-[55vh] overflow-hidden bg-blue-200"
+           data-gallery="gallery">
+            <img src="./assets/img/gallery/IMG-2.JPG" alt="Imagen 2" class="parallax-image object-cover w-full h-full" />
+        </a>
+        
+        <a href="./assets/img/gallery/IMG-3.JPG" 
+           class="glightbox glass-panel-rr lg:col-span-7 lg:col-start-1 h-80 lg:h-[55vh] overflow-hidden"
+           data-gallery="gallery">
+            <img src="./assets/img/gallery/IMG-3.JPG" alt="Imagen 3" class="parallax-image object-cover w-full h-full" />
+        </a>
+        
+        <a href="./assets/img/gallery/IMG-4.JPG" 
+           class="glightbox glass-panel-rl lg:col-span-5 lg:col-start-8 h-80 lg:h-[55vh] overflow-hidden bg-blue-200"
+           data-gallery="gallery">
+            <img src="./assets/img/gallery/IMG-4.JPG" alt="Imagen 4" class="parallax-image object-cover w-full h-full" />
+        </a>
+        
+        <a href="./assets/img/gallery/IMG-5.JPG" 
+           class="glightbox glass-panel-rr lg:col-span-5 lg:col-start-1 h-80 lg:h-[55vh] overflow-hidden bg-blue-200"
+           data-gallery="gallery">
+            <img src="./assets/img/gallery/IMG-5.JPG" alt="Imagen 5" class="parallax-image object-cover w-full h-full" />
+        </a>
+        
+        <a href="./assets/img/gallery/IMG-6.JPG" 
+           class="glightbox glass-panel-rl lg:col-span-7 lg:col-start-6 h-80 lg:h-[55vh] overflow-hidden bg-blue-200"
+           data-gallery="gallery">
+            <img src="./assets/img/gallery/IMG-6.JPG" alt="Imagen 6" class="parallax-image object-cover w-full h-full" />
+        </a>
+        
+    </div>
+</section>
         <!-- Cronograma con Mapa completo arriba y cards abajo -->
-        <section id="cronograma" class="bg-gradient-to-br from-violet-950 via-purple-900 to-fuchsia-950 xxsm:py-[22vh] xsm:py-[16vh] lg:py-[14vh] overflow-hidden">
+        <section id="cronograma"
+            class="bg-gradient-to-br from-violet-950 via-purple-900 to-fuchsia-950 xxsm:py-[22vh] xsm:py-[16vh] lg:py-[14vh] overflow-hidden">
             <div class="container mx-auto px-4 md:px-6 lg:px-8">
                 <h2 class="text-4xl md:text-5xl lg:text-6xl text-white text-left mb-12">Cronograma</h2>
 
                 <!-- Cards del cronograma -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 mb-12">
                     <!-- Card 1 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-amber-300 mb-4">08:30 AM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ingreso del equipo de Producción</h4>
                         <p class="text-white/80 flex-1">Montaje ambientación..</p>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-purple-300 mb-4">10:30 AM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ingreso de modelos de 3° año</h4>
                         <p class="text-white/80 flex-1"></p>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-fuchsia-300 mb-4">11:00 AM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ensayo de pasadas performáticas de 3° año</h4>
                         <p class="text-white/80 flex-1">Sin música, solo calzado.</p>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-pink-300 mb-4">12:00 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ingreso de la DJ</h4>
                         <p class="text-white/80 flex-1">Montaje del set.</p>
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-violet-300 mb-4">12:30 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Almuerzo</h4>
                         <p class="text-white/80 flex-1">Hasta las 13:00 PM.</p>
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-indigo-300 mb-4">13:00 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ensayo de las pasadas de 3° año</h4>
                         <p class="text-white/80 flex-1">Con música y calzado.</p>
                     </div>
 
                     <!-- Card 7 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-rose-300 mb-4">14:00 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Maquillaje y peinado de 3° año</h4>
                         <p class="text-white/80 flex-1">Hasta las 17:00 PM.</p>
                     </div>
 
                     <!-- Card 8 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-purple-300 mb-4">15:00 AM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ingreso de alumnos y modelos</h4>
                         <p class="text-white/80 flex-1">De 1° y 2° año.</p>
                     </div>
 
                     <!-- Card 9 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-fuchsia-300 mb-4">15:40 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ensayo de 1° y 2° año</h4>
                         <p class="text-white/80 flex-1">Los modelos usarán solo el calzado.</p>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-purple-300 mb-4">16:00 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Maquillaje y peinado de 1° y 2° año</h4>
                         <p class="text-white/80 flex-1">Ingreso de la fotógrafa.</p>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-fuchsia-300 mb-4">17:00 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ensayo general de todos los años</h4>
                         <p class="text-white/80 flex-1">Con los diseños.</p>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-fuchsia-300 mb-4">18:00 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Ida a Backstage</h4>
                         <p class="text-white/80 flex-1">De estudiantes y modelos de todos los años.</p>
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-pink-300 mb-4">18:20 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Apertura de puertas</h4>
                         <p class="text-white/80 flex-1">Ingreso del público.</p>
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-violet-300 mb-4">18:40 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Cierre de puertas</h4>
                         <p class="text-white/80 flex-1">Comienzo del desfile.</p>
                     </div>
 
                     <!-- Card 7 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-indigo-300 mb-4">19:40 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Finalización del desfile</h4>
                         <p class="text-white/80 flex-1">Regreso al backstage de estudiantes y modelos.</p>
                     </div>
 
                     <!-- Card 8 -->
-                    <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
+                    <div
+                        class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
                         <h3 class="text-3xl font-bold text-rose-300 mb-4">20:00 PM</h3>
                         <h4 class="text-xl font-semibold text-white mb-3">Brindis <strong>Comunidad NE</strong></h4>
                         <p class="text-white/80 flex-1">Salida de estudiantes e invitados.</p>
                     </div>
 
-                    <!-- Card Ubicación -->
-                    <!-- <div class="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/20 shadow-2xl p-6 h-[12rem] flex flex-col">
-                        <h3 class="text-2xl font-bold text-white mb-4">📍 Ubicación</h3>
-                        <div class="flex-1 space-y-3 text-white/90">
-                            <p class="font-semibold text-lg">Entrada libre y gratuita</p>
-                            <p class="text-sm">Nivel: Entrepisos (EP)</p>
-                            <p class="text-sm">Av. Callao 67, C1022 CABA</p>
-                        </div>
-                    </div> -->
                 </div>
 
                 <!-- Mapa completo -->
                 <div class="w-full h-[31.25rem] rounded-2xl overflow-hidden shadow-2xl xxsm:mb-6 lg:mb-12">
-                    <iframe
-                        class="w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8377772733866!2d-58.3918202!3d-34.6082634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac2fdccf467%3A0x25278d2e62aa7c71!2sAv.%20Callao%2067%2C%20C1022AAA%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1763958304790!5m2!1ses!2sar" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                    <iframe class="w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8377772733866!2d-58.3918202!3d-34.6082634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac2fdccf467%3A0x25278d2e62aa7c71!2sAv.%20Callao%2067%2C%20C1022AAA%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1763958304790!5m2!1ses!2sar"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                
+
                 <div class="flex text-white/90 xxsm:mb-12">
-                    <p class="text-lg">Nivel: Entrepisos (EP), Av. Callao 67, C1022 CABA, <span class="font-semibold">Entrada libre y gratuita.</span></p>
+                    <p class="text-lg">Nivel: Entrepisos (EP), Av. Callao 67, C1022 CABA, <span
+                            class="font-semibold">Entrada libre y gratuita.</span></p>
                 </div>
             </div>
         </section>
@@ -371,7 +325,8 @@
     <footer class="flex items-center justify-center py-12 bg-black overflow-hidden">
         <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
             <div class="w-32 h-auto">
-                <img src="./assets/img/Nueva Escuela__LOGO-Negativo__Horizontal.png" alt="Nueva Escuela Logo" class="w-full h-auto">
+                <img src="./assets/img/Nueva Escuela__LOGO-Negativo__Horizontal.png" alt="Nueva Escuela Logo"
+                    class="w-full h-auto">
             </div>
             <div class="text-center md:text-left text-purple-900">
                 <p class="text-sm md:text-base">Sitio desarrollado por:</p>
@@ -382,6 +337,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="./src/scripts/main.js"></script>
+
 </body>
+
 </html>

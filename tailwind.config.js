@@ -9,6 +9,10 @@ export default {
     extend: {
       backgroundImage: {
         bannerImg:"url('/assets/img/gallery/bosquejo.jpg')",
+      },
+      fontFamily: {
+        gabarito: ['"Gabarito"', 'system-ui', 'sans-serif'],
+        gondens: ['"Gondens"', 'system-ui', 'sans-serif'],
       }
     },
   },

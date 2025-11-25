@@ -1,4 +1,113 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@font-face {
+    font-family: 'gondens_demoregular';
+    src: url('./fonts/gondens_demo-webfont.woff2') format('woff2'),
+         url('./fonts/gondens_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer base{
+  html, body {
+    font-family: "Gabarito", system-ui, sans-serif;
+  }
+  
+  h1, h2, h3{
+    font-family: "Oswald", system-ui, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal
+  }
+}
+
 @import "tailwindcss";
+
+@utility oswald-title {
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+/* Sobrescribir .container usando @utility (Tailwind v4) */
+@utility container {
+  width: 100%;
+
+  /* 320px */
+  @variant xxsm {
+    max-width: 92vw;
+  }
+
+  /* 482px */
+  @variant xsm {
+    max-width: 92vw;
+  }
+
+  /* 40rem (sm por defecto) */
+  @variant sm {
+    max-width: 94vw;
+  }
+
+  /* 48rem (md) */
+  @variant md {
+    max-width: 96vw;
+  }
+
+  /* 64rem (lg) */
+  @variant lg {
+    max-width: 84vw;
+  }
+
+  /* 80rem (xl) */
+  @variant xl {
+    max-width: 83vw;
+  }
+
+  /* 96rem (2xl) */
+  @variant 2xl {
+    max-width: 99.125rem;
+  }
+}
+
+/* Panel “vidrio” para los contenedores de imagen */
+@utility glass-panel {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.65),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+@utility glass-panel-rl {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top-left-radius: 1.8rem;
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.65),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+@utility glass-panel-rr {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top-right-radius: 1.8rem;
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.65),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  overflow: hidden;
+}
 
 @theme {
     --breakpoint-xxsm: 320px;
@@ -9,4 +118,3 @@
 .mt-custom {
     @apply xxsm:mt-16 sm:mt-24 lg:mt-32;
 }
-

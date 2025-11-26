@@ -4,64 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Meta básicos -->
     <title>NE - Desfile de Modas 2025 | Nueva Escuela</title>
     <meta name="description" content="Desfile de Modas 2025 de Nueva Escuela. Demostración de proyectos finales - Metamorfosis. 5 de diciembre, 18:20hs. Av. Callao 67, CABA. Entrada libre y gratuita.">
     <meta name="author" content="Laura Cádiz, Joel Lorenzetti">
     <meta name="keywords" content="Nueva Escuela, desfile de modas, moda, diseño, Buenos Aires, CABA, metamorfosis, 2025">
-    <!-- Robots -->
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
-    
-    <!-- Preconnect para optimización -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
-<body class="antialiased bg-gradient-to-t from-violet-950 via-purple-950 to-black xxsm:from-purple-950 xxsm:to-black overflow-x-hidden">
-    <header class="px-0 mx-0">
-        <nav class="fixed w-full top-0 h-20 md:h-24 z-50 bg-white/5 backdrop-blur-2xl border-b border-white/5 shadow-lg">
-            <div class="container mx-auto h-full flex items-center justify-between">
-                <a href="#hero">
-                    <img class="xxsm:h-18 md:h-20 w-auto" src="./assets/img/Nueva Escuela__LOGO-Negativo__Horizontal.png" alt="Logo de Nueva Escuela">
-                </a>
-                
-                <!-- Botón Hamburguesa -->
-                <button id="mobileMenuBtn" class=" text-white focus:outline-none bg-white/10 backdrop-blur-xl p-3 rounded-full border border-white/20 cursor-pointer">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            
-            <!-- Menú -->
-            <div id="mobileMenu" class="w-full bg-black/70 backdrop-blur-2xl max-h-0 overflow-hidden transition-all duration-300 border-b border-white/10 lg:px-42">
-                <ul class="flex flex-col text-white text-right">
-                    <li><a href="#concepto" class="block px-6 py-4 hover:bg-white/10 transition-colors border-b border-white/5">Concepto</a></li>
-                    <li><a href="#gallery" class="block px-6 py-4 hover:bg-white/10 transition-colors border-b border-white/5">Galería</a></li>
-                    <li><a href="#cronograma" class="block px-6 py-4 hover:bg-white/10 transition-colors">Cronograma</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+
+<body class="antialiased bg-gradient-to-t from-violet-950 via-purple-950 to-black overflow-x-hidden">
+
+<header class="px-0 mx-0">
+    <nav class="fixed w-full top-0 h-20 md:h-24 z-50 bg-white/5 backdrop-blur-2xl border-b border-white/5 shadow-lg">
+        <div class="container mx-auto h-full flex items-center justify-between">
+            <a href="#hero">
+                <img class="xxsm:h-18 md:h-20 w-auto" src="./assets/img/Nueva Escuela__LOGO-Negativo__Horizontal.png" alt="Logo de Nueva Escuela">
+            </a>
+
+            <button id="mobileMenuBtn" class="text-white bg-white/10 backdrop-blur-xl p-3 rounded-full border border-white/20 cursor-pointer">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="w-full bg-black/70 backdrop-blur-2xl max-h-0 overflow-hidden transition-all duration-300 border-b border-white/10">
+            <ul class="flex flex-col text-white text-right">
+                <li><a href="#concepto" class="block px-6 py-4 hover:bg-white/10">Concepto</a></li>
+                <li><a href="#gallery" class="block px-6 py-4 hover:bg-white/10">Galería</a></li>
+                <li><a href="#cronograma" class="block px-6 py-4 hover:bg-white/10">Cronograma</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
 <main class="overflow-x-hidden h-auto">
-    <!-- Hero -->
-    <section id="hero" class="relative w-full h-screen overflow-hidden flex items-center justify-center">
-        <!-- Fondo con video -->
-        <div class="absolute inset-0">
-            <video autoplay muted loop playsinline class="w-full h-full object-cover">
-                <source src="./assets/video/vid-hero.mp4" type="video/mp4">
-            </video>
-            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/90"></div>
-        </div>
-        
-        <!-- Grid Container -->
+
+<!-- HERO -->
+<section id="hero" class="relative w-full h-screen overflow-hidden flex items-center justify-center">
+    <div class="absolute inset-0">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="./assets/video/vid-hero.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/90"></div>
+    </div>
+
         <div class="relative z-10 w-full h-full ">
             <div class="grid xxsm:grid-rows-7 lg:grid-rows-3 lg:grid-cols-12 xxsm:grid-cols-4 lg:p-0 xxsm:px-4 gap-4 w-full h-screen animate-blurred-fade-in animate-delay-700">
 
@@ -95,7 +87,7 @@
 
             </div>
         </div>
-    </section>
+</section>
 
     <!-- Concepto -->
     <section id="concepto" class="grid xxsm:grid-cols-4 xxsm:grid-rows-2 lg:grid-cols-12 lg:grid-rows-3  xl:grid-rows-1 xxsm:gap-8 xsm:gap-2 sm:gap-0 lg:gap-4 sm:h-fit overflow-hidden xxsm:pt-[8rem] xsm:pt-[10rem] sm:pt-[12rem] lg:pt-[14rem]">
@@ -325,23 +317,28 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="flex items-center justify-center py-12 bg-black overflow-hidden">
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-            <div class="w-32 h-auto">
-                <img src="./assets/img/Nueva Escuela__LOGO-Negativo__Horizontal.png" alt="Nueva Escuela Logo" class="w-full h-auto">
-            </div>
-            <div class="text-center md:text-left text-purple-900">
-                <p class="text-sm md:text-base">Sitio desarrollado por:</p>
-                <p class="mt-2 text-sm md:text-base text-purple-300">_Laura Cádiz</p>
-                <p class="text-sm md:text-base text-purple-300">_Joel Lorenzetti</p>
-            </div>
+</main>
+
+<footer class="flex items-center justify-center py-12 bg-black overflow-hidden">
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+        <div class="w-32 h-auto">
+            <img src="./assets/img/Nueva Escuela__LOGO-Negativo__Horizontal.png" alt="Nueva Escuela Logo" class="w-full h-auto">
         </div>
-    </footer>
+        <div class="text-center md:text-left text-purple-900">
+            <p class="text-sm md:text-base">Sitio desarrollado por:</p>
+            <p class="mt-2 text-sm md:text-base text-purple-300">_Laura Cádiz</p>
+            <p class="text-sm md:text-base text-purple-300">_Joel Lorenzetti</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="../src/scripts/main.js"></script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<!-- 👇 RUTA CORREGIDA (está dentro de /docs/assets/js/) -->
+<script src="./assets/js/main.js"></script>
+
 </body>
 </html>

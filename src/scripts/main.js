@@ -99,10 +99,22 @@ function initMobileMenu() {
     });
 }
 
+// LIGHTBOX
+function initLightbox() {
+    if (typeof GLightbox !== 'undefined') {
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    }
+}
+
 // INICIALIZACIÓN
 document.addEventListener('DOMContentLoaded', () => {
     initParallax();
     initCountdown();
     initCarousel();
     initMobileMenu();
+    initLightbox();
 });
